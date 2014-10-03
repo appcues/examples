@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appcues Widget Example</title>
+    <link rel="stylesheet" type="text/css" href="https://dxg0aknohlgi.cloudfront.net/appcues.css">
+    <link rel="stylesheet" type="text/css" href="https://dxg0aknohlgi.cloudfront.net/widget.css">
+    <style type="text/css">
+        html, body {
+            font-family: Proxima Nova, Helvetica Neue, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div id="appcues-widget">
+    <svg class="appcues-widget-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+        <g id="Your_Icon">
+            <path d="M75.479,49.201H42.034v-5.92c-2.014-2.799-3.205-6.228-3.205-9.932c0-3.703,1.191-7.133,3.205-9.931v-12.85   C42.034,8.046,39.989,6,37.466,6h-2.897C32.047,6,30,8.046,30,10.568v79.493c0,2.524,2.046,4.57,4.568,4.57h40.91   c2.522,0,4.567-2.046,4.567-4.57V53.769C80.046,51.246,78.001,49.201,75.479,49.201z" fill="#4f9ae5"/>
+            <path d="M55.874,17.826c-8.572,0-15.522,6.95-15.522,15.522c0,8.573,6.95,15.523,15.522,15.523c8.573,0,15.523-6.95,15.523-15.523   C71.397,24.776,64.447,17.826,55.874,17.826z M61.03,24.869c1.218,0,2.205,0.988,2.205,2.205c0,1.218-0.987,2.205-2.205,2.205   s-2.204-0.987-2.204-2.205C58.826,25.857,59.812,24.869,61.03,24.869z M50.718,24.869c1.219,0,2.206,0.988,2.206,2.205   c0,1.218-0.986,2.205-2.206,2.205c-1.217,0-2.204-0.987-2.204-2.205C48.514,25.857,49.501,24.869,50.718,24.869z M55.874,43.081   c-4.485,0-8.122-2.841-8.122-6.346c6.6,0,11.168,0,16.246,0C63.998,40.239,60.36,43.081,55.874,43.081z" fill="#4f9ae5"/>
+        </g>
+</svg>
+</div>
+
+<script type="text/javascript" src='https://dxg0aknohlgi.cloudfront.net/appcues-bundle.js' data-appcues-id='15' data-user-id='test7' data-user-email='test@test.com' onload='Appcues.init()' no-cache></script>
+<script type="text/javascript" src="https://dxg0aknohlgi.cloudfront.net/widget-bundle.js"></script>
+<script type="text/javascript">
+    var widget = new AppcuesWidget({
+        appcuesId: '15',
+        userId: 'test7',
+        userEmail: 'test@test.com',
+        userHash: '7d28a4a4644151e2bbfc5bbe2992d7df'
+    });
+
+    widget.init('#appcues-widget', {
+        position: 'right',
+        header: '<span style="color: #ccc; font-size: 11px; text-transform: uppercase;">Looking for help? Try these tutorials.</span>'
+    });
+</script>
+
+</body>
+</html>
