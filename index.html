@@ -24,12 +24,9 @@
 <script type="text/javascript" src='https://dxg0aknohlgi.cloudfront.net/appcues-bundle.js' data-appcues-id='15' data-user-id='test7' data-user-email='test@test.com' onload='Appcues.init()' no-cache></script>
 <script type="text/javascript" src="https://dxg0aknohlgi.cloudfront.net/widget-bundle.js"></script>
 <script type="text/javascript">
-    var widget = new AppcuesWidget({
-        appcuesId: '15',
-        userId: 'test7',
-        userEmail: 'test@test.com',
-        userHash: '7d28a4a4644151e2bbfc5bbe2992d7df'
-    });
+    var widgetConfig = Appcues.Identity.get();
+    widgetConfig.appcuesId = 15;
+    var widget = new AppcuesWidget(widgetConfig);
 
     widget.init('#appcues-widget', {
         position: 'right',
